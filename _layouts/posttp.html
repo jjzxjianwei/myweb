@@ -8,8 +8,8 @@
     <meta name="renderer" content="webkit">
     <meta name="description" content="该栏目主要包括技术浅谈、人生感悟以及音乐运动三个栏目文章，这三个栏目主要是自己最喜欢的内容，希望将日常的一些感触都分门别类的写到这三个栏目里。" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="http://jjzxjianwei.github.io/myweb/css/indextp.css" />
-    <link rel="stylesheet" href="http://jjzxjianwei.github.io/myweb/css/posttp.css" />
+    <link rel="stylesheet" href="/css/indextp.css" />
+    <link rel="stylesheet" href="/css/posttp.css" />
 <style type="text/css">
     body { background:#e8e8e8; }
     @media screen and (max-width: 750px){
@@ -22,12 +22,12 @@
 </head>
 <body>
 <div class="home-menu">
-            <a class="home-menu-icon" href="http://jjzxjianwei.github.io{{site.baseurl }}/technology/index.html">返回BLOG首页</a>
+            <a class="home-menu-icon" href="/technology/index.html">返回BLOG首页</a>
      <a class="home-follow" href="#" title="textlogo">+</a></div>
    </div>
    <div id="content">
      <div class="entry">
-        <h1 class="entry-title"><a href="{{ site.baseurl }}{{ page.url }}" title="{{ page.title }}">{{page.title}}</a></h1>
+        <h1 class="entry-title"><a href="{{ page.url }}" title="{{ page.title }}">{{page.title}}</a></h1>
         <p class="entry-date">{{ page.date|date:"%Y-%m-%d" }}</p>
         {{ content }}
         <div id="disqus_container">
@@ -73,28 +73,28 @@
     </div>
 
     <div class="sidenav"><h5>欢迎来到我的BOLG</h5>
-	<img src="http://jjzxjianwei.github.io/myweb/img/21.jpg"  width="230px" height="180px" />   </h5>
+	<img src="/img/21.jpg"  width="230px" height="180px" />   </h5>
 	</div>
 
     <div class="sidenav">
         <h2>技术浅谈</h2>
         <ul class="artical-list">
             {% for post in site.categories.technology %}
-            <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
             {% endfor %}
         </ul>
 
         <h2>人生感悟</h2>
         <ul class="artical-list">
            {% for post in site.categories.life %}
-            <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
            {% endfor %}
         </ul>
 
         <h2>音乐运动</h2>
         <ul class="artical-list">
             {% for post in site.categories.mbplayer %}
-            <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
            {% endfor %}
         </ul>
     </div>
