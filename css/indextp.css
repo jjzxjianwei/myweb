@@ -80,13 +80,13 @@ pre ol{margin-left:25px;list-style-type:decimal;}
     background-position:50% 50%;
 }
 .blog .aside{
-    background-image:url(http://jjzxjianwei.github.io/myweb/img/15.jpg);
+    background-image:url(/img/15.jpg);
 }
 .opinion .aside{
-      background-image:url(http://jjzxjianwei.github.io/myweb/img/3.jpg);
+      background-image:url(/img/3.jpg);
 }
 .project .aside{
-      background-image:url(http://jjzxjianwei.github.io/myweb/img/10.jpg);
+      background-image:url(/img/10.jpg);
 }
 .index-content .section { margin-left:30%; padding-top:80px; padding-right:15%; ;}
 
