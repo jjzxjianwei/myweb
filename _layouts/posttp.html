@@ -84,21 +84,21 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
         <h2>技术浅谈</h2>
         <ul class="artical-list">
             {% for post in site.categories.technology %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
             {% endfor %}
         </ul>
 
         <h2>人生感悟</h2>
         <ul class="artical-list">
            {% for post in site.categories.life %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
            {% endfor %}
         </ul>
 
         <h2>音乐运动</h2>
         <ul class="artical-list">
             {% for post in site.categories.mbplayer %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
            {% endfor %}
         </ul>
     </div>
